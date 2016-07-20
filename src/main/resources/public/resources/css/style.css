@@ -1,5 +1,5 @@
 /*		  
-Olá mundo! 
+Olï¿½ mundo! 
 Este CSS foi criado pela designer Dani Guerrato como demo de um artigo do Tableless.
 Web:       www.tableless.com.br
 E-mail:    dani@popupdesign.com.br
@@ -7,7 +7,7 @@ Divirta-se! :)
 */
 
 /* ==========================================================================
-   Normatização CSS
+   Normatizaï¿½ï¿½o CSS
    ========================================================================== */
 
 body {
@@ -62,7 +62,7 @@ embed {
 
 .menu {
     width: 74.468085106383%; /*840px / 1128px */
-    float: right;
+    /*float: right;*/
 }
 
 .menu ul {

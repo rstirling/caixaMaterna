@@ -4,13 +4,15 @@ import java.util.Collection;
 
 import com.pi4j.io.gpio.GpioPin;
 import com.pi4j.io.gpio.PinState;
+import org.springframework.stereotype.Service;
+
 
 public interface GpioService {
-	public boolean setPinState(PinState state);
-	public PinState getPinState();
-	public Double getTemperature();
-	public Collection<GpioPin> getPins();
-	public boolean setDisplayText(int line, String text);
-	public boolean showClock();
-	public boolean showInfo();
+	boolean setPinState(PinState state);
+	PinState getPinState();
+	Double getTemperature();
+	Collection<GpioPin> getPins();
+	boolean setDisplayText(int line, String text);
+	boolean showClock();
+	boolean showInfo();
 }

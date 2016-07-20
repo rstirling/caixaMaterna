@@ -9,6 +9,7 @@ import org.caixaMaterna.sensors.OneWireTempSensor;
 import org.caixaMaterna.service.GpioService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 import com.pi4j.component.lcd.LCDTextAlignment;
@@ -22,7 +23,8 @@ import com.pi4j.io.gpio.RaspiPin;
 import com.pi4j.system.NetworkInfo;
 import com.pi4j.system.SystemInfo;
 
-//@Service("gpioService")
+@Profile("prod")
+@Service("gpioService")
 public class GpioServicePi implements GpioService{
 	
 	private static final Logger LOGGER = LoggerFactory.getLogger(GpioServicePi.class);

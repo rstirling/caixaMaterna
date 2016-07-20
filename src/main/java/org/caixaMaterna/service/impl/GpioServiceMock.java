@@ -9,6 +9,7 @@ import java.util.Random;
 import org.caixaMaterna.service.GpioService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 import com.pi4j.io.gpio.GpioPin;
@@ -19,6 +20,7 @@ import com.pi4j.io.gpio.PinMode;
 import com.pi4j.io.gpio.PinPullResistance;
 import com.pi4j.io.gpio.PinState;
 
+@Profile("dev")
 @Service("gpioService")
 public class GpioServiceMock implements GpioService{
 	

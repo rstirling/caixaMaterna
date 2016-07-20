@@ -35,7 +35,7 @@ public class PiController {
         LOGGER.debug("turn led on");
         service.setPinState(PinState.HIGH);
         LOGGER.debug("--> GPIO state should be: ON");
-        return "info-off";
+        return "HIGH";
     }
     
     @RequestMapping(value = "/off", method = RequestMethod.POST)
@@ -44,7 +44,7 @@ public class PiController {
         LOGGER.debug("turn led off");
         service.setPinState(PinState.LOW);
         LOGGER.debug("--> GPIO state should be: OFF");
-        return "info-off";
+        return "LOW";
     }
     
     @RequestMapping(value = "/trigger", method = RequestMethod.POST)

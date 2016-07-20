@@ -1,7 +1,7 @@
 var app = angular.module('piApp', []);
 
 //var serverUrl = 'localhost:8080';
-var serverUrl = 'rstirling.ddns.net:8080';
+var serverUrl = '10.0.0.245:8080';
 
 app.controller('TemperatureController', ['$scope', '$http', function ($scope, $http) {
 	
